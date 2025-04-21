@@ -279,6 +279,19 @@
       ]
     },
     {
+      "tag":"Jetbrain",
+      "type":"selector",
+      "outbounds":[
+        "direct",
+        "HongKong",
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ]
+    },
+    {
       "tag":"Games",
       "type":"selector",
       "outbounds":[
@@ -517,6 +530,10 @@
         "outbound": "Microsoft"
       },
       {
+        "rule_set": "geosite-jetbrain",
+        "outbound": "Jetbrain"
+      },
+      {
         "rule_set": ["geosite-category-games", "geosite-dmm"],
         "outbound": "Games"
       },
@@ -742,6 +759,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-jetbrain",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/jetbrains.srs",
         "download_detour": "direct"
       }
     ]
