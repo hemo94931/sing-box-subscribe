@@ -660,6 +660,10 @@
     {
       "type": "direct",
       "tag": "Direct"
+    },
+    {
+      "type": "direct",
+      "tag": "COMPATIBLE"
     }
   ],
   "route": {

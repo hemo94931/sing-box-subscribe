@@ -87,7 +87,7 @@ function combin_to_config(config, data) {
             }
 
             if (t_o.length === 0) {
-                t_o.push('手动选择');
+                t_o.push('COMPATIBLE');
                 console.error(`发现 ${po.tag} 出站下的节点数量为 0 ，会导致sing-box无法运行，请检查config模板是否正确。`);
             }
             po.outbounds = t_o;
