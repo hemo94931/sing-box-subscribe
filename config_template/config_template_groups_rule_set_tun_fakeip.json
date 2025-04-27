@@ -808,6 +808,18 @@
         "outbound": "Github"
       },
       {
+        "rule_set": "geosite-microsoft",
+        "outbound": "Microsoft"
+      },
+      {
+        "rule_set": "geosite-jetbrain",
+        "outbound": "Jetbrain"
+      },
+      {
+        "rule_set": ["geoip-apple", "geosite-apple", "geosite-amazon"],
+        "outbound": "Apple"
+      },
+      {
         "rule_set": ["geosite-youtube"],
         "outbound": "Youtube"
       },
@@ -834,18 +846,6 @@
       {
         "rule_set": "geosite-disney",
         "outbound": "Disney+"
-      },
-      {
-        "rule_set": ["geoip-apple", "geosite-apple", "geosite-amazon"],
-        "outbound": "Apple"
-      },
-      {
-        "rule_set": "geosite-microsoft",
-        "outbound": "Microsoft"
-      },
-      {
-        "rule_set": "geosite-jetbrain",
-        "outbound": "Jetbrain"
       },
       {
         "rule_set": "geosite-bilibili",
