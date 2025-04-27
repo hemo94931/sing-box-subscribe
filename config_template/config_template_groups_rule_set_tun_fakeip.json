@@ -186,7 +186,7 @@
       "default": "美国"
     },
     {
-      "tag":"Telegram",
+      "tag":"Twitter",
       "type":"selector",
       "outbounds":[
         "手动选择",
@@ -208,7 +208,7 @@
       ]
     },
     {
-      "tag":"Twitter",
+      "tag":"Telegram",
       "type":"selector",
       "outbounds":[
         "手动选择",
@@ -250,29 +250,6 @@
         "全球",
         "其他"
       ]
-    },
-    {
-      "tag":"BiliBili",
-      "type":"selector",
-      "outbounds":[
-        "手动选择",
-        "Direct",
-        "香港",
-        "台湾",
-        "新国",
-        "日本",
-        "美国",
-        "韩国",
-        "香港-auto",
-        "台湾-auto",
-        "新国-auto",
-        "日本-auto",
-        "美国-auto",
-        "韩国-auto",
-        "全球",
-        "其他"
-      ],
-      "default": "Direct"
     },
     {
       "tag":"Bahamut",
@@ -433,6 +410,29 @@
     },
     {
       "tag":"Jetbrain",
+      "type":"selector",
+      "outbounds":[
+        "手动选择",
+        "Direct",
+        "香港",
+        "台湾",
+        "新国",
+        "日本",
+        "美国",
+        "韩国",
+        "香港-auto",
+        "台湾-auto",
+        "新国-auto",
+        "日本-auto",
+        "美国-auto",
+        "韩国-auto",
+        "全球",
+        "其他"
+      ],
+      "default": "Direct"
+    },
+    {
+      "tag":"BiliBili",
       "type":"selector",
       "outbounds":[
         "手动选择",
@@ -723,24 +723,28 @@
         "outbound": "OpenAI"
       },
       {
-        "rule_set": ["geosite-youtube", "geoip-google", "geosite-google", "geosite-github"],
+        "rule_set": ["geoip-google", "geosite-google"],
         "outbound": "Google"
-      },
-      {
-        "rule_set": ["geoip-telegram", "geosite-telegram"],
-        "outbound": "Telegram"
       },
       {
         "rule_set": ["geoip-twitter", "geosite-twitter"],
         "outbound": "Twitter"
       },
       {
-        "rule_set":["geoip-facebook", "geosite-facebook"],
-        "outbound": "Facebook"
+        "rule_set": ["geoip-telegram", "geosite-telegram"],
+        "outbound": "Telegram"
       },
       {
-        "rule_set": "geosite-bilibili",
-        "outbound": "BiliBili"
+        "rule_set": ["geosite-github"],
+        "outbound": "Github"
+      },
+      {
+        "rule_set": ["geosite-youtube"],
+        "outbound": "Youtube"
+      },
+      {
+        "rule_set":["geoip-facebook", "geosite-facebook"],
+        "outbound": "Facebook"
       },
       {
         "rule_set": "geosite-bahamut",
@@ -773,6 +777,10 @@
       {
         "rule_set": "geosite-jetbrain",
         "outbound": "Jetbrain"
+      },
+      {
+        "rule_set": "geosite-bilibili",
+        "outbound": "BiliBili"
       },
       {
         "rule_set": ["geosite-category-games", "geosite-dmm"],
