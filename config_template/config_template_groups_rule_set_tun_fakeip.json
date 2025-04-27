@@ -735,6 +735,10 @@
         "action": "hijack-dns"
       },
       {
+        "protocol": "quic",
+        "outbound": "block"
+      },
+      {
         "rule_set": "geosite-category-ads-all",
         "clash_mode": "rule",
         "action": "reject"
