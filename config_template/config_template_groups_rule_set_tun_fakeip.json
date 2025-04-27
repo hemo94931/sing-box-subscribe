@@ -750,6 +750,12 @@
         "outbound": "手动选择"
       },
       {
+        "domain_suffix": [
+          ".edu"
+        ],
+        "outbound": "美国"
+      },
+      {
         "domain": [
           "clash.razord.top",
           "yacd.metacubex.one",
