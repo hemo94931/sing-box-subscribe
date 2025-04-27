@@ -278,7 +278,7 @@
       ]
     },
     {
-      "tag":"Microsoft",
+      "tag":"Github",
       "type":"selector",
       "outbounds":[
         "手动选择",
@@ -300,7 +300,7 @@
       ]
     },
     {
-      "tag":"Github",
+      "tag":"Microsoft",
       "type":"selector",
       "outbounds":[
         "手动选择",
