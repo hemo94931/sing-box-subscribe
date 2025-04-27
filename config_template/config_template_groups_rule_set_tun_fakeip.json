@@ -42,7 +42,8 @@
     "rules": [
       {
         "outbound": "any",
-        "server": "local"
+        "server": "local",
+        "disable_cache": true
       },
       {
         "clash_mode": "direct",
@@ -58,7 +59,8 @@
           "AAAA"
         ],
         "rule_set": "geosite-cn",
-        "server": "fakeip"
+        "server": "fakeip",
+        "rewrite_ttl": 1
       },
       {
         "rule_set": "geosite-cn",
@@ -84,7 +86,8 @@
           "A",
           "AAAA"
         ],
-        "server": "fakeip"
+        "server": "fakeip",
+        "rewrite_ttl": 1
       }
     ],
     "independent_cache": true,
@@ -763,6 +766,18 @@
           "d.metacubex.one"
         ],
         "outbound": "Direct"
+      },
+      {
+        "domain_suffix": [
+          "julvpi.fun"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain": [
+          "linux.do"
+        ],
+        "outbound": "Proxy"
       },
       {
         "ip_is_private": true,
