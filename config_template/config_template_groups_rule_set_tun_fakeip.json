@@ -771,13 +771,13 @@
         "domain_suffix": [
           "julvpi.fun"
         ],
-        "outbound": "direct"
+        "outbound": "Direct"
       },
       {
         "domain": [
           "linux.do"
         ],
-        "outbound": "Proxy"
+        "outbound": "手动选择"
       },
       {
         "ip_is_private": true,
