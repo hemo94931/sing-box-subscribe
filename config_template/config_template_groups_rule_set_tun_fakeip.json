@@ -736,7 +736,7 @@
       },
       {
         "protocol": "quic",
-        "outbound": "block"
+        "outbound": "reject"
       },
       {
         "rule_set": "geosite-category-ads-all",
